@@ -1,0 +1,43 @@
+- 搭建本地私链节点
+
+- 编写合约代码，到 http://remix.ethereum.org/ 编译出字节码
+
+- 构建交易，发布合约
+
+- 测试合约的转账
+
+- python环境构建 - https://web3py.readthedocs.io/en/stable/contracts.html
+
+  - 安装依赖包
+    - pip install mysql-connector
+	- pip install dnspython==1.16.0
+	- pip install protobuf
+	- 安装vc工具库 双击 visualcppbuildtools_full.exe 默认安装
+	
+  - 安装web3 pip install web3
+  
+  //- 安装nodejs，安装solc编译器    
+	//- npm install -g solc
+	
+  - 安装solidify编译器 pip install py-solc
+  
+  - 安装solc.exe，解压solidity-windows 把目录添加到环境变量
+
+  - solc --version 确认各编译器版本 下载地址 https://github.com/ethereum/solidity/releases
+
+  - solc 帮助文档 https://solidity.readthedocs.io/en/develop/using-the-compiler.html
+
+  - 单文件编译 solc --combined-json abi,asm,ast,bin,bin-runtime,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc DNFTLibrary.sol -o .
+
+  - 多文件编译
+
+  - 安装pycharm Intellij Solidity 插件
+
+  - 合约库 路径 https://github.com/OpenZeppelin/openzeppelin-contracts/releases
+  - 合约库 文档 https://docs.openzeppelin.com/contracts/2.x/ 其中2.x为 5.0,   3.x为6.0
+
+  - https://github.com/ethereum/solidity/releases/tag/v0.5.5
+  - https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v2.5.0
+  - https://github.com/ProjectOpenSea/opensea-creatures/tree/master/contracts
+
+- 使用python发布，转账token
