@@ -1,0 +1,50 @@
+-- 构建属于自己的 opensea 生物的元原数服务器
+https://docs.opensea.io/docs/metadata-standards
+
+-- 添加opensea
+主网：https://opensea.io/get-listed/step-two
+测试网：https://rinkeby.opensea.io/get-listed/step-two
+
+
+- 创建发布erc721的opensea合约
+- 通过构建自己的http服务器，可以映射链上到链下的tokenurl对应nft商品的元元素
+- 发布合约后需要调用合约接口创建生物，及设置所有者
+- 通过https://rinkeby.opensea.io/get-listed/step-two 填写合约地址，查看创建的nft生物，并设置出售等流程
+
+
+- nft令牌铸造例子
+
+   ```
+    pragma solidity ^0.5.0;
+
+    import "@openzeppelin/contracts/token/ERC721/ERC721Full.sol";
+    import "@openzeppelin/contracts/drafts/Counters.sol";
+
+    contract GameItem is ERC721Full {
+        using Counters for Counters.Counter;
+        Counters.Counter private _tokenIds;
+
+        constructor() ERC721Full("GameItem", "ITM") public {
+        }
+
+        function awardItem(address player, string memory tokenURI) public returns (uint256) {
+            _tokenIds.increment();
+
+            uint256 newItemId = _tokenIds.current();
+            _mint(player, newItemId);
+            _setTokenURI(newItemId, tokenURI);
+
+            return newItemId;
+        }
+    }
+   ```
+
+   - 通过web3.py构建erc721对象，然后编译出字节码交易调用 / 编译出读数据字节码交易call()此处需要同步rinkey节点
+
+  - transferOwnership * @dev将合同的所有权转移到新帐户（`newOwner`）。*只能由当前所有者调用。
+  - setApprovalForAll
+  - transferFrom
+
+  - https://rinkeby.etherscan.io/tx/0xb7e1a798223c5aa9e29c2aa645d5763ededa166f56dfb5c40a9bc7953ea2ed12
+  - https://rinkeby.etherscan.io/tx/0x1011d43cf24bf704c9cd4da98147a53223d298363b13d16b7650afc6859cc7e9
+  - https://rinkeby.etherscan.io/tx/0x17ca6f89f708e0cc045732231fa2bf1e3cff1592ee3e85f4cefdacf71ca7e0be

@@ -10,6 +10,10 @@ def sign_develop_contract_tx(data, key):
 
 
 if __name__ == '__main__':
+
+
+
+
     transaction = {
         "from": "0xD9d73f325BdF1af2C76437b95CE72574D56E3232",
         "value": 0,
