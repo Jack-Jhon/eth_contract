@@ -10,10 +10,6 @@ def sign_develop_contract_tx(data, key):
 
 
 if __name__ == '__main__':
-
-
-
-
     transaction = {
         "from": "0xD9d73f325BdF1af2C76437b95CE72574D56E3232",
         "value": 0,
@@ -31,3 +27,5 @@ if __name__ == '__main__':
     print(signed.s)
     print(signed.v)
     ## https://rinkeby.etherscan.io/address/0x7dca125b1e805dc88814aed7ccc810f677d3e1db#code
+
+

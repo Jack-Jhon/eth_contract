@@ -1,0 +1,9 @@
+key:0x620b0c04de671567431e962c6d0eadc28b9f25d672d0a036044c5a259c27ad9b
+addr:0xD9d73f325BdF1af2C76437b95CE72574D56E3232
+
+key:d92ec36c9bee33b3c93f0a865866b286650afa6ec909f9a279af1c363249a847
+addr: 0x005Ea2533D25B74BE9F774c79Fa4E0D219912B41
+
+chrome eth钱包扩展：chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html#
+
+rinkeby 网络水龙头：https://faucet.rinkeby.io/

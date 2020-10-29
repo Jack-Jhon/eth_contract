@@ -1,3 +1,30 @@
+-----------------------------------------------------------
+- rinkeby 网络水龙头：https://faucet.rinkeby.io/
+- 创建发布erc721的opensea合约
+- 通过构建自己的http服务器，可以映射链上到链下的tokenurl对应nft商品的元元素
+- 发布合约后需要调用合约接口创建生物，及设置所有者
+- 通过https://rinkeby.opensea.io/get-listed/step-two 填写合约地址，查看创建的nft生物，并设置出售等流程
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+
 -- 构建属于自己的 opensea 生物的元原数服务器
 https://docs.opensea.io/docs/metadata-standards
 
@@ -6,10 +33,7 @@ https://docs.opensea.io/docs/metadata-standards
 测试网：https://rinkeby.opensea.io/get-listed/step-two
 
 
-- 创建发布erc721的opensea合约
-- 通过构建自己的http服务器，可以映射链上到链下的tokenurl对应nft商品的元元素
-- 发布合约后需要调用合约接口创建生物，及设置所有者
-- 通过https://rinkeby.opensea.io/get-listed/step-two 填写合约地址，查看创建的nft生物，并设置出售等流程
+
 
 
 - nft令牌铸造例子
@@ -48,3 +72,8 @@ https://docs.opensea.io/docs/metadata-standards
   - https://rinkeby.etherscan.io/tx/0xb7e1a798223c5aa9e29c2aa645d5763ededa166f56dfb5c40a9bc7953ea2ed12
   - https://rinkeby.etherscan.io/tx/0x1011d43cf24bf704c9cd4da98147a53223d298363b13d16b7650afc6859cc7e9
   - https://rinkeby.etherscan.io/tx/0x17ca6f89f708e0cc045732231fa2bf1e3cff1592ee3e85f4cefdacf71ca7e0be
+
+
+
+
+- 查找对方物品，购买页面 https://rinkeby.opensea.io/assets/0x70988a12797AFf8c063a72BebCaf897175C590C3/1
